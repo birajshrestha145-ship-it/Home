@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Karobar - Services | Local Service Hiring</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="assets/Logo.jpg" alt="E-Karobar Logo" class="logo-img">
+                <h1>E-Karobar</h1>
+            </a>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="bookings.html">My Bookings</a>
+                <button class="btn-primary">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-page">
+        <div class="container">
+            <h1>Browse Services</h1>
+            
+            <div class="services-content">
+                <aside class="filters-sidebar">
+                    <h3>Filter Services</h3>
+                    
+                    <div class="filter-group">
+                        <label for="search-filter">Search</label>
+                        <input type="text" id="search-filter" placeholder="Search services...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <div class="filter-options">
+                            <label><input type="checkbox" class="category-filter" value="plumbing"> Plumbing</label>
+                            <label><input type="checkbox" class="category-filter" value="electrical"> Electrical</label>
+                            <label><input type="checkbox" class="category-filter" value="cleaning"> Cleaning</label>
+                            <label><input type="checkbox" class="category-filter" value="carpentry"> Carpentry</label>
+                            <label><input type="checkbox" class="category-filter" value="painting"> Painting</label>
+                            <label><input type="checkbox" class="category-filter" value="landscaping"> Landscaping</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <div class="filter-options">
+                            <label><input type="radio" name="price" value="all"> All Prices</label>
+                            <label><input type="radio" name="price" value="0-300"> Rs0 - Rs300/hr</label>
+                            <label><input type="radio" name="price" value="300-500"> Rs300 - Rs500/hr</label>
+                            <label><input type="radio" name="price" value="500-700"> Rs500 - Rs700/hr</label>
+                            <label><input type="radio" name="price" value="700+"> Rs700+/hr</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Rating</label>
+                        <div class="filter-options">
+                            <label><input type="radio" name="rating" value="all"> All Ratings</label>
+                            <label><input type="radio" name="rating" value="4.5"> ⭐ 4.5+</label>
+                            <label><input type="radio" name="rating" value="4.0"> ⭐ 4.0+</label>
+                            <label><input type="radio" name="rating" value="3.5"> ⭐ 3.5+</label>
+                        </div>
+                    </div>
+
+                    <button class="btn-filter-clear">Clear Filters</button>
+                </aside>
+
+                <main class="services-list">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <img src="assets/plumber.jpg" alt="Plumbing Repair" class="service-image">
+                            <h3>Plumbing Repair</h3>
+                            <p class="provider">John's Plumbing</p>
+                            <div class="rating">
+                                <span class="stars">⭐ 4.8</span>
+                            </div>
+                            <p class="price">Rs500/hr</p>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <div class="service-card">
+                            <img src="assets/Electrician.jpg" alt="Electrician Work" class="service-image">
+                            <h3>Electrician Work</h3>
+                            <p class="provider">Elite Electric</p>
+                            <div class="rating">
+                                <span class="stars">⭐ 4.9</span>
+                            </div>
+                            <p class="price">Rs600/hr</p>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <div class="service-card">
+                            <img src="assets/Cleaning.jpg" alt="Home Cleaning" class="service-image">
+                            <h3>Home Cleaning</h3>
+                            <p class="provider">Sparkle Clean Co</p>
+                            <div class="rating">
+                                <span class="stars">⭐ 4.7</span>
+                            </div>
+                            <p class="price">Rs450/hr</p>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                        <div class="service-card">
+                            <img src="assets/Carpentry.jpg" alt="Carpentry" class="service-image">
+                            <h3>Carpentry</h3>
+                            <p class="provider">Wood Masters</p>
+                            <div class="rating">
+                                <span class="stars">⭐ 4.6</span>
+                            </div>
+                            <p class="price">Rs550/hr</p>
+                            <button class="btn-book">Book Now</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 E-Karobar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>
